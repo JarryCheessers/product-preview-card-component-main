@@ -1,0 +1,63 @@
+:root {
+  --color-black: #1c232b;
+  --color-white: #ffffff;
+  --color-gray: #6c7289;
+  --color-green-500: #3d8a16;
+  --color-green-700: #1a4032;
+  --color-cream: #f2eae2;
+  --spacing-300: 1rem;
+  --spacing-500: 1.5rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-cream);
+  color: var(--color-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  border: 2px solid var(--color-green-500);
+  border-radius: 10px;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-500);
+  gap: var(--spacing-300);
+  background-color: var(--color-grey-800);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 384px;
+  box-sizing: border-box;
+}
+
+.card-body img {
+  width: 100%;
+  min-height: 342px;
+  max-height: 456px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: var(--spacing-300);
+}
+
+@media (min-width: 375px) {
+  body {
+    background-color: var(--color-white);
+  }
+}
