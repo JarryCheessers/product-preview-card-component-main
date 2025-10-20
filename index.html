@@ -13,34 +13,44 @@
     />
 
     <link rel="stylesheet" href="./styles.css" />
-    >
 
     <title>Frontend Mentor | Product preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main class="container">
       <article class="card-body">
         <figure class="card-image">
-          <img
-            src="images/image-product-mobile.jpg"
-            alt="This is a perfect perfume bottle placed on a surface"
-          />
+          <picture>
+            <source
+              srcset="images/image-product-desktop.jpg"
+              media="(min-width: 48rem)"
+            />
+            <img
+              src="images/image-product-mobile.jpg"
+              alt="This is a perfect perfume bottle placed on a surface"
+            />
+          </picture>
         </figure>
-        <h4>Perfume</h4>
-        Gabrielle Essence Eau De Parfum A floral, solar and voluptuous
-        interpretation composed by Olivier Polge, Perfumer-Creator for the House
-        of CHANEL. $149.99 $169.99 Add to Cart
+        <section class="content-body">
+          <h4>Perfume</h4>
+          <h1>Gabrielle Essence Eau De Parfum</h1>
+          <p>
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <p class="new-price">
+            <strong>$149.99</strong> <span class="old-price">$169.99</span>
+          </p>
+          <button type="button" class="button">
+            <img
+              src="images/icon-cart.svg"
+              alt="This the perfect icon of a shopping cart"
+              aria-hidden="true"
+              class="cart-icon"
+            />
+            Add to Cart
+          </button>
+        </section>
       </article>
     </main>
     <div class="attribution">
